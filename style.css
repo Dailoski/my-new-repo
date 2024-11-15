@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    width: 700px;
+    height: 500px;
+    grid-template-columns: repeat(3, 2fr 1fr 2fr);
+    grid-template-rows: 2fr 2fr 1fr 1fr;
+    gap: 10px
+}
+.container div:nth-child(2n){
+    background-color: aqua;
+}
+.container div:nth-child(2n+1){
+    background-color: red;
+}
